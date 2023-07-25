@@ -1,0 +1,89 @@
+#container{
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #e5e5fd;
+    min-height: 100vh;
+    border: 10px solid #1d1e4c;
+    display: flex;
+    padding: 100px 200px 50px 200px;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.img{
+    width: 300px;
+    height: 320px;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(apj.jpg);
+    border-radius: 50%;
+}
+.heading{
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    padding-top: 180px;
+    line-height: 0px;
+}
+.heading h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #1d1e4c;
+}
+.heading h4{
+    font-size: 30px;
+}
+.content h2{
+    font-size: 70px;
+    font-weight: 400;
+}
+.content p{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+    text-align: justify;
+}
+.biography li{
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+.bottom p{
+    margin-top: 50px;
+    text-align: end;
+}
+@media(max-width:450px){
+    #container{
+        padding: 50px 10px 30px 10px;
+    }
+    .img{
+        width: 190px;
+        height: 200px;
+    }
+    .heading{
+        padding-top: 100px;
+    }
+    .heading h1{
+        font-size: 16px;
+    }
+    .heading h4{
+        font-size: 18px;
+    }
+    .content h2{
+        font-size: 45px;
+    }
+    .content p{
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 1px;
+    }
+    .biography li{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .bottom p{
+        margin-top: 20px;
+    }
+}
